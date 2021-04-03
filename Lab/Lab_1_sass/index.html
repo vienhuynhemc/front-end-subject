@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login form SCSS</title>
+    <link href="scss/style.css" rel="stylesheet">
+</head>
+
+<body translate="no">
+    <form action="" class="form">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="login login__form">
+            <div class="container cont__login">
+                <input type="text" class="email input" name="email" placeholder="Username">
+                <input type="password" class="password input" name="password" placeholder="Password">
+                <input type="submit" class="btn btn__login">
+            </div>
+
+        </div>
+        <div class="register login__form">
+            <div class="container">
+                <input type="text" class="email input" name="email" placeholder="Email Address">
+                <input type="password" class="password input" name="password" placeholder="Password">
+                <input type="password" class="password pwtwo input" name="pwrepeat" placeholder="Repeat Password">
+                <input type="submit" class="btn btn__register">
+            </div>
+        </div>
+
+        <div class="cta">
+            <h2 class="cta__heading">Login to your account</h2>
+            <p class="cta__text">To get full access to our awesome product!</p>
+
+            <button class="btn cta__btn">
+                <p class="cta__btn--text1">Dont have an Account?</p>
+                <p class="cta__btn--text2">Click Here to Register?</p>
+            </button>
+        </div>
+    </form>
+    <script id="rendered-js">
+        const cta = document.querySelector('.cta');
+        const ctaBtn = document.querySelector('.cta__btn');
+        const shapes = document.querySelectorAll('.shape');
+
+        document.querySelector('.form').addEventListener('click', function (e) {
+            e.preventDefault();
+        });
+
+        const heading = [
+            "Register Now",
+            "Login to your account",
+            "To get full access to our awesome product!",
+            "You can do way more, when your a member. Register now to reap the benefits!",
+        ];
+        let text = false;
+
+        ctaBtn.addEventListener('click', function (e) {
+            text = !text;
+            if (text) {
+                cta.style.left = "8%";
+            } else {
+                cta.style.left = "50%";
+            }
+            cta.classList.toggle('showRegister');
+
+            cta.children[0].innerText = text ? heading[0] : heading[1];
+            cta.children[1].innerText = text ? heading[3] : heading[2];
+            ctaBtn.children[0].innerText = text ? "Already have an Account?" : "Dont have an Account?";
+            ctaBtn.children[1].innerText = text ? "Click here to login?" : "Click Here to Register?";
+
+            e.preventDefault();
+        });
+    </script>
+
+
+</body>
+
+</html>

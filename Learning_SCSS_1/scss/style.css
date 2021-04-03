@@ -1,0 +1,47 @@
+.main .child {
+  background-color: #e9e9ae;
+}
+
+.main .child a {
+  color: red;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.main p {
+  color: blue;
+  font-weight: bold;
+  border-bottom: 1px solid blue;
+}
+
+.main .content {
+  border-top: 1px solid red;
+  border-bottom: 1px solid #e9e9ae;
+  border-left: 1px solid green;
+  border-right: 1px solid violet;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.main input {
+  padding: 20px;
+}
+
+.main input::placeholder {
+  color: #dadde1;
+}
+
+.main input:hover {
+  background-color: aqua;
+}
+
+.main input:hover::placeholder {
+  color: cyan;
+}
+
+.main-left {
+  background-color: aqua;
+  color: red !important;
+}
+/*# sourceMappingURL=style.css.map */

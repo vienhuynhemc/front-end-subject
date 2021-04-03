@@ -1,0 +1,154 @@
+// Thôn tin width-height của .form
+$width-form: 600px;
+$height-form: 250px;
+
+// Mixin của shape nhận vô màu
+@mixin tham-so-shape($color, $left, $top) {
+  left: $left;
+  top: $top;
+  background-color: $color;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+// Mixin full combo display flex căn lề
+@mixin full-combo-flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Mixin tham số button
+@mixin tham-so-button($colorBorder, $pxCongNhieu, $pxCongIt) {
+  border: 1px solid $colorBorder;
+  background-color: #00000000;
+  outline: none;
+  border: {
+    top-right-radius: $pxCongNhieu;
+    bottom-left-radius: $pxCongNhieu;
+    top-left-radius: $pxCongIt;
+    bottom-right-radius: $pxCongIt;
+  }
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+// Toàn cục
+* {
+  padding: 0;
+  margin: 0;
+  // css của body
+  body {
+    @include full-combo-flex();
+    height: 100vh;
+    // css của form
+    .form {
+      position: relative;
+      height: $height-form;
+      width: $width-form;
+      box-shadow: 0 3px 11px #00000080;
+      display: flex;
+      // shape1
+      .shape1 {
+        @include tham-so-shape(rgba(34, 5, 234, 0.7), 24%, 10%);
+        transform: rotate(30deg);
+        clip-path: polygon(25% 0%, 82% 6%, 98% 60%, 3% 94%);
+      }
+      // shape2
+      .shape2 {
+        @include tham-so-shape(rgba(213, 45, 34, 0.7), 40%, 10%);
+        clip-path: polygon(49% 45%, 98% 7%, 95% 81%, 16% 98%, 0 23%);
+      }
+      // css của .cta
+      .cta {
+        position: absolute;
+        top: -75px;
+        z-index: 999;
+        height: 400px;
+        width: 250px;
+        background-color: #c06200;
+        left: 50%;
+        transition: all 0.4s ease;
+        font-family: sans-serif;
+        color: white;
+        display: flex;
+        // css của h2
+        &__heading {
+          font: {
+            weight: bold;
+            size: 1.5em;
+          }
+          position: absolute;
+          top: 80px;
+          margin: {
+            left: 40px;
+            right: 40px;
+          }
+        }
+        // css của p
+        &__text {
+          font-size: 12px;
+          position: absolute;
+          top: 160px;
+          margin-left: 40px;
+        }
+        // css của button
+        &__btn {
+          @include tham-so-button(white, 15px, 3px);
+          position: absolute;
+          top: 260px;
+          width: 200px;
+          height: 38px;
+          left: 9%;
+          // css của p
+          p {
+            color: white;
+          }
+          // hover
+          &:hover {
+            background-color: #232323;
+            border-radius: 0px;
+            box-shadow: 0 1px 1px #00000066;
+          }
+        }
+      }
+      // css của login_form
+      .login__form {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+        @include full-combo-flex();
+        // css của input
+        .input {
+          border: none;
+          box-shadow: 2px 2px 5px #00000066;
+          padding: 5px 10px;
+          margin-top: 8px;
+        }
+        // css của email
+        .email {
+          margin-top: 30px;
+        }
+        // css của btn
+        .btn {
+          @include tham-so-button(#646464b3, 8px, 2px);
+          padding: 3px 10px;
+          margin-top: 20px;
+          // hover
+          &:hover {
+            box-shadow: 0 2px 3px #00000066;
+            border-radius: 0px;
+            padding: 3px 15px;
+          }
+        }
+        // css của container
+        .container {
+          @include full-combo-flex();
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

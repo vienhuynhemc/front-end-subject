@@ -1,0 +1,81 @@
+.a1 {
+  background-color: #2083da;
+  display: flex;
+  width: 100%;
+  height: 100px;
+}
+
+.a2 {
+  background-color: #20da74;
+  display: flex;
+  width: 100%;
+  height: 100px;
+}
+
+.a3 {
+  background-color: #da2620;
+  display: flex;
+  width: 100%;
+  height: 100px;
+}
+
+.a4 {
+  background-color: #e5fc17;
+  display: flex;
+  width: 100%;
+  height: 100px;
+}
+
+.a {
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (min-width: 1000px) {
+  .a2 {
+    width: 70%;
+  }
+  .a {
+    flex-direction: row;
+  }
+  .a3 {
+    width: 30%;
+  }
+}
+
+@media all and (min-width: 450px) and (max-width: 1000px) {
+  .a2 {
+    width: 50%;
+  }
+  .a {
+    flex-direction: row;
+  }
+  .a3 {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 450px) and (max-width: 750px) {
+  .a2 {
+    width: 100%;
+  }
+  .a3 {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .a1 {
+    width: 0%;
+  }
+  .a2 {
+    width: 100%;
+  }
+  .a3 {
+    width: 0%;
+  }
+  .a4 {
+    width: 0%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

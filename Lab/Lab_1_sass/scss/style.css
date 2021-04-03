@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+* body .form {
+  position: relative;
+  height: 250px;
+  width: 600px;
+  box-shadow: 0 3px 11px #00000080;
+  display: flex;
+}
+
+* body .form .shape1 {
+  left: 24%;
+  top: 10%;
+  background-color: rgba(34, 5, 234, 0.7);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  transform: rotate(30deg);
+  clip-path: polygon(25% 0%, 82% 6%, 98% 60%, 3% 94%);
+}
+
+* body .form .shape2 {
+  left: 40%;
+  top: 10%;
+  background-color: rgba(213, 45, 34, 0.7);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  clip-path: polygon(49% 45%, 98% 7%, 95% 81%, 16% 98%, 0 23%);
+}
+
+* body .form .cta {
+  position: absolute;
+  top: -75px;
+  z-index: 999;
+  height: 400px;
+  width: 250px;
+  background-color: #c06200;
+  left: 50%;
+  transition: all 0.4s ease;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+}
+
+* body .form .cta__heading {
+  font-weight: bold;
+  font-size: 1.5em;
+  position: absolute;
+  top: 80px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+* body .form .cta__text {
+  font-size: 12px;
+  position: absolute;
+  top: 160px;
+  margin-left: 40px;
+}
+
+* body .form .cta__btn {
+  border: 1px solid white;
+  background-color: #00000000;
+  outline: none;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+  transition: 0.4s;
+  position: absolute;
+  top: 260px;
+  width: 200px;
+  height: 38px;
+  left: 9%;
+}
+
+* body .form .cta__btn p {
+  color: white;
+}
+
+* body .form .cta__btn:hover {
+  background-color: #232323;
+  border-radius: 0px;
+  box-shadow: 0 1px 1px #00000066;
+}
+
+* body .form .login__form {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* body .form .login__form .input {
+  border: none;
+  box-shadow: 2px 2px 5px #00000066;
+  padding: 5px 10px;
+  margin-top: 8px;
+}
+
+* body .form .login__form .email {
+  margin-top: 30px;
+}
+
+* body .form .login__form .btn {
+  border: 1px solid #646464b3;
+  background-color: #00000000;
+  outline: none;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 3px 10px;
+  margin-top: 20px;
+}
+
+* body .form .login__form .btn:hover {
+  box-shadow: 0 2px 3px #00000066;
+  border-radius: 0px;
+  padding: 3px 15px;
+}
+
+* body .form .login__form .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*# sourceMappingURL=style.css.map */

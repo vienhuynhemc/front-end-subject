@@ -1,0 +1,54 @@
+@import "configuration";
+
+.main {
+  // css child của .main
+  .child {
+    background-color: $color-yellow;
+    // css a của child
+    a {
+      color: $color-red;
+      font-size: 32px;
+      font-weight: $font-weight-bold;
+    }
+  }
+  // css p của .main
+  p {
+    color: $color-blue;
+    font-weight: $font-weight-bold;
+    border-bottom: 1px solid $color-blue;
+  }
+  // css của .content
+  .content {
+    // border
+    border: {
+      top: 1px solid $color-red;
+      bottom: 1px solid $color-yellow;
+      left: 1px solid green;
+      right: 1px solid violet;
+    }
+    // font
+    font: {
+      size: 40px;
+      weight: $font-weight-bold;
+      family: sans-serif;
+    }
+  }
+  // css của input
+  input {
+    padding: 20px;
+    &::placeholder {
+      color: rgb(218, 221, 225);
+    }
+    &:hover {
+      background-color: $color-qua;
+      &::placeholder {
+        color: $color;
+      }
+    }
+  }
+  // css của main left
+  &-left {
+    background-color: $color-qua;
+    color: $color-red !important;
+  }
+}

@@ -1,0 +1,42 @@
+.divButton button:nth-child(1) {
+  background-color: #f79191;
+  border-radius: 5px;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.divButton button:nth-child(1):hover {
+  background-color: #f24a4a;
+}
+
+.divButton button:nth-child(2) {
+  background-color: #9e9ef8;
+  border-radius: 5px;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.divButton button:nth-child(2):hover {
+  background-color: #5757f3;
+}
+
+.divButton button:nth-child(3) {
+  background-color: #f5f572;
+  border-radius: 5px;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.divButton button:nth-child(3):hover {
+  background-color: #f0f02b;
+}
+/*# sourceMappingURL=style.css.map */
