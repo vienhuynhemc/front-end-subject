@@ -30,6 +30,7 @@ body {
     width: 100%;
     height: 266px;
     overflow: hidden;
+    display: flex;
 
     // Hình nền của header
     &-background {
@@ -48,23 +49,56 @@ body {
     }
     // Kết thúc hình nền của header
 
-    // avatar của header
-    &-avatar {
-      position: relative;
-      z-index: 3;
-      width: 145px;
-      height: 145px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin: {
-        left: 112px;
-        top: 42px;
+    // Div avatar và tên
+    &-first {
+      // avatar của header
+      &-avatar {
+        position: relative;
+        z-index: 3;
+        width: 145px;
+        height: 145px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: {
+          left: 112px;
+          top: 42px;
+        }
+        img {
+          width: 100%;
+        }
       }
-      img {
-        width: 100%;
+      // Kết thúc avatar của header
+
+      // Thông tin dưới avatar của header
+      &-information-under-avatar {
+        position: relative;
+        z-index: 3;
+        color: #ccd1d9;
+        margin-top: 15px;
+        h4 {
+          font: {
+            family: "Raleway", sans-serif;
+            weight: 400;
+            size: 18px;
+          }
+          letter-spacing: 0.6px;
+          left: 114px;
+          position: relative;
+        }
+        p {
+          font: {
+            family: "Raleway", sans-serif;
+            weight: 400;
+            size: 11.3px;
+          }
+          position: relative;
+          left: 123px;
+          margin-top: 3px;
+        }
       }
+      // Kết thúc thông tin dưới avatar của header
     }
-    // Kết thúc avatar của header
+    // Kết thúc div avatar và tên
   }
   // Kết thúc header của cv
 }
