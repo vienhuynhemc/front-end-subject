@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.15.3-web/css/all.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;1,100;1,200;1,300&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="row">
+            <input type="checkbox" hidden class="check-sidebar" name="" id="check-sidebar">
+            <input type="checkbox" hidden class="check-notification" name="" id="check-notification">
+            <div class="sidebar">
+                <div class="sidebar__main">
+                    <div class="sidebar__logo">
+                        <div class="sidebar__logo-mobile">
+                            <div class="sidebar__logo-image">
+                                <img class="sidebar__logo-image-v" src="./image/logo.jpg" alt="">
+                                <div class="sidebar__logo-title">OneTech</div>
+                            </div>
+                            <div class="sidebar__logo-close">
+                                <label for="check-sidebar"> <i class="far fa-times-circle"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar__dashboard">
+                        <div class="sidebar__dashboard-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="sidebar__dashboard-title">
+                            Dashboard
+                        </div>
+                    </div>
+                    <div class="sidebar__analyst">
+                        <div class="sidebar__analyst-icon">
+                            <i class="fas fa-adjust"></i>
+                        </div>
+                        <div class="sidebar__analyst-title">
+                            Analyst
+                        </div>
+                    </div>
+                    <div class="sidebar__ecommerce">
+                        <div class="sidebar__ecommerce-title">
+                            eCommerce
+                        </div>
+                        <div class="sidebar__ecommerce-icon">
+                            <i class="fas fa-adjust"></i>
+                        </div>
+                    </div>
+                    <div class="sidebar__title">ADD</div>
+                    <div class="sidebar__ui-down">
+                        <div class="sidebar__ui-title">
+                            <i class="far fa-envelope"> Email</i>
+                        </div>
+                    </div>
+                    <div class="sidebar__ui-down">
+                        <div class="sidebar__ui-title">
+                            <i class="far fa-comment-alt"> Chat</i>
+                        </div>
+                    </div>
+                    <div class="sidebar__ui-down">
+                        <div class="sidebar__ui-title">
+                            <i class="far fa-check-square"> Todo</i>
+                        </div>
+                    </div>
+                    <div class="sidebar__ui-down">
+                        <div class="sidebar__ui-title">
+                            <i class="far fa-calendar-alt"> Calendar</i>
+                        </div>
+                    </div>
+                    <div class="sidebar__title">UI</div>
+                    <input type="checkbox" name="" hidden class="sidebar__grid-check" id="sidebar__grid-ckeck">
+                    <!-- <div class="sidebar__grid"> -->
+                    <label for="sidebar__grid-ckeck" class="sidebar__ui-grid">
+                        <div class="sidebar__ui-title">
+                            <i class="fas fa-border-all"> Grid</i>
+                        </div>
+                        <div class="sidebar__ui-icon">
+                            >
+                        </div>
+                        <div class="sidebar__ui-icon-down">
+                            v
+                        </div>
+                    </label>
+                    <ul class="sidebar_children">
+                        <li>
+                            <div class="sidebar__ui-grid">
+                                <div class="sidebar__ui-title">
+                                    <i class="far fa-smile-wink"> Grid 1</i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sidebar__ui-grid">
+                                <div class="sidebar__ui-title">
+                                    <i class="far fa-smile-wink"> Grid 2</i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sidebar__ui-grid">
+                                <div class="sidebar__ui-title">
+                                    <i class="far fa-smile-wink"> Grid 3</i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- </div> -->
+                    <div class="sidebar__ui-down">
+                        <div class="sidebar__ui-title">
+                            <i class="fas fa-tint"> Color</i>
+                        </div>
+                    </div>
+                    <div class="sidebar__ui-down">
+                        <div class="sidebar__ui-title">
+                            <i class="far fa-credit-card"> Cart</i>
+                        </div>
+                        <div class="sidebar__ui-icon">
+                            >
+                        </div>
+                    </div>
+                    <div class="sidebar__ui-down">
+                        <div class="sidebar__ui-title">
+                            <i class="fas fa-table"> Table</i>
+                        </div>
+                    </div>
+                    <div class="sidebar__ui-down">
+                        <div class="sidebar__ui-title">
+                            <i class="fas fa-igloo"> Component</i>
+                        </div>
+                        <div class="sidebar__ui-icon">
+                            >
+                        </div>
+                    </div>
+                    <div class="sidebar__title">FORM</div>
+                    <div class="sidebar__ui-down">
+                        <div class="sidebar__ui-title">
+                            <i class="fas fa-mail-bulk"> Form Elements</i>
+                        </div>
+                        <div class="sidebar__ui-icon">
+                            >
+                        </div>
+                    </div>
+                    <div class="sidebar__ui-down">
+                        <div class="sidebar__ui-title">
+                            <i class="far fa-square"> Form Layouts</i>
+                        </div>
+                    </div>
+                    <div class="sidebar__ui-down">
+                        <div class="sidebar__ui-title">
+                            <i class="far fa-file"> Form Wizard</i>
+                        </div>
+                    </div>
+                    <div class="sidebar__ui-down">
+                        <div class="sidebar__ui-title">
+                            <i class="far fa-check-circle"> Validation </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notification">
+                <div class="notification__new">
+                    <div class="notification__new-count">
+                        5 New
+                    </div>
+                    <div class="notification__new-app">
+                        App Notifications
+                    </div>
+                </div>
+                <div class="notification__new__info">
+                    <a href="" class="notification__new__info-title">
+                        <i class="far fa-comment-alt"></i>
+                        <div class="notification__new__info-name">
+                            New message
+                            <div class="notification__new__info-description">Are your going meet tonight </div>
+                        </div>
+                    </a>
+                    <div class="notification__new__info-time">
+                        10 sec ago
+                    </div>
+                </div>
+                <hr>
+                <div class="notification__new__info">
+                    <a href="" class="notification__new__info-title-error">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div class="notification__new__info-name">
+                            Error
+                            <div class="notification__new__info-description">Are your going meet tonight </div>
+                        </div>
+                    </a>
+                    <div class="notification__new__info-time">
+                        10 sec ago
+                    </div>
+                </div>
+                <hr>
+                <div class="notification__new__info">
+                    <a href="" class="notification__new__info-title">
+                        <i class="far fa-comment-alt"></i>
+                        <div class="notification__new__info-name">
+                            New message
+                            <div class="notification__new__info-description">Are your going meet tonight </div>
+                        </div>
+                    </a>
+                    <div class="notification__new__info-time">
+                        10 sec ago
+                    </div>
+                </div>
+                <hr>
+                <div class="notification__new__info">
+                    <a href="" class="notification__new__info-title-mail">
+                        <i class="far fa-envelope"></i>
+                        <div class="notification__new__info-name">
+                            New mail
+                            <div class="notification__new__info-description">Are your going meet tonight </div>
+                        </div>
+                    </a>
+                    <div class="notification__new__info-time">
+                        10 sec ago
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <div class="content__sidebar-top">
+                        <div class="content__sidebar-left">
+                            <div class="content__sidebar-left-list">
+                                <i class="far fa-check-square"></i>
+                                <i class="far fa-comment-alt"></i>
+                                <i class="far fa-envelope"></i>
+                                <i class="far fa-calendar-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <label for="check-sidebar"><i class="fas fa-bars"></i></label>
+                        </div>
+                        <div class="content__sidebar-right">
+                            <div class="content__sidebar-english">
+                                English
+                            </div>
+                            <img class="flag" src="./image/flag.png" alt="">
+                            <a href="" class="notification_bell">
+                                <label for="check-notification"> <i class="far fa-bell"></i></label>
+                                <span class="notification_bell-number">6</span>
+                            </a>
+                            <a href="" class="notification_cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="notification_cart-number">5</span>
+                            </a>
+                            <i class="far fas fa-search"></i>
+                            <label for="check-user" class="content__sidebar-user">
+                                <input type="checkbox" hidden class="check-user" name="" id="check-user">
+                                <div class="content__sidebar-user-name">
+                                    John
+                                    <div class="content__sidebar-user-gender">
+                                        men
+                                    </div>
+                                </div>
+                                <img class="content__sidebar-user-image"
+                                    src="./image/b48e1609dcdba1ca2cfaa83d52194aa7.jpg" alt="">
+                                <div class="user">
+                                    <div class="user_information">
+                                        <div class="user_information-list">
+                                            <i class="far fa-user"> Profile</i>
+                                        </div>
+                                        <div class="user_information-list">
+                                            <i class="far fa-envelope"> Inbox</i>
+                                        </div>
+                                        <div class="user_information-list">
+                                            <i class="far fa-check-square"> Tasks</i>
+                                        </div>
+                                        <div class="user_information-list">
+                                            <i class="far fa-comment-alt"> Chat</i>
+                                        </div>
+                                        <div class="user_information-list">
+                                            <i class="far fa-heart"> Wish List</i>
+                                        </div>
+                                        <hr>
+                                        <div class="user_information-list">
+                                            <i class="fas fa-sign-out-alt"> Logout</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="content__shop">Shop</div>
+                    <div class="content__category">
+                        <i class="fas fa-bars"></i>
+                        <div class="content_featured">
+                            Featured
+                            <div class="content_featured-down">v</div>
+                        </div>
+                        <i class="fas fa-th"></i>
+                    </div>
+                    <div class="content_search">
+                        <input type="text" class="content_search-input" placeholder="Search here">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="content__checkout">
+                        <div class="content__checkout__left">
+                            <div class="content__checkout-title">
+                                Checkout
+                            </div>
+                            <i class="fas fa-home"></i>
+                            <div class="content__checkout-step">
+                                >>
+                            </div>
+                            <div class="content__checkout-ecommerce">
+                                eCommerce
+                            </div>
+                            <div class="content__checkout-step">
+                                >>
+                            </div>
+                            <div class="content__checkout-checkout">
+                                Checkout
+                            </div>
+                        </div>
+                        <div class="content__setting">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                    </div>
+                    <input type="checkbox" name="" hidden class="content__process-check-2"
+                        id="content__process-check-2">
+                    <div class="content__process">
+                        <div class="content__process-one">
+                            <div class="content__process-number-one">1</div>
+                        </div>
+                        <div class="content__process-step"></div>
+                        <label for="content__process-check-2" class="content__process-two">
+                            <div class="content__process-number-two">2</div>
+                        </label>
+                        <div class="content__process-three">
+                            <div class="content__process-number-three">3</div>
+                        </div>
+                    </div>
+                    <div class="content__txt">
+                        <h1>Hello</h1>
+                    </div>
+                    <div class="content__product">
+                        <div class="content__main__product">
+                            <div class="content__product-detail">
+                                <div class="content__product-image">
+                                    <img class="product-image" src="./image/636778799310641475_00509082-1.jpg" alt="">
+                                </div>
+                                <div class="content__product-description">
+                                    <div class="product-name">Apple Watch Series 4 GPS</div>
+                                    <div class="product-description">đẳng cấp từ tên gọi đến từng chi tiết...</div>
+                                    <div class="product_info">
+                                        By <a class="product-by" href="">Apple</a>
+                                        <div class="product-stock">
+                                            In stock
+                                        </div>
+                                        <div class="product-quantity">
+                                            Quantity
+                                        </div>
+                                        <div class="product-quantity-id">
+                                            <div class="product-quantity-decrease">-</div>
+                                            <div class="product-quantity-number">8</div>
+                                            <div class="product-quantity-increase">+</div>
+                                        </div>
+                                        <div class="product-date">
+                                            Delivery by, Sat Mar 23
+                                        </div>
+                                        <div class="product-discount">
+                                            17% Off 4 Offers Available
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content__product-action">
+                                    <div class="content__product-action-list">
+                                        <div class="content__product-amount">
+                                            <div class="product-amount">
+                                                <div class="product-amount-start-l">
+                                                </div>
+                                                <div class="product-amount-start">
+                                                    34 <i class="far fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-price">
+                                                $399
+                                            </div>
+                                        </div>
+                                        <div class="product-free">
+                                            <i class="fas fa-shopping-cart"></i> Free Shipping
+                                        </div>
+                                        <div class="product-remove">
+                                            <i class="fas fa-times"></i> REMOVE
+                                        </div>
+                                        <div class="product_action">
+                                            <div class="product-wishlist">
+                                                <i class="far fa-star"></i> MOVE TO WISHLIST
+                                            </div>
+                                            <div class="product-wishlist-head">
+                                                <i class="fas fa-heart"></i> WISHLIST
+                                            </div>
+                                            <div class="product-add-cart">
+                                                <i class="fas fa-archive"></i> ADD TO CART
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content__product-detail">
+                                <div class="content__product-image">
+                                    <img class="product-image" src="./image/pin-xiaomi-gen-3-10000-h7_4.jpg" alt="">
+                                </div>
+                                <div class="content__product-description">
+                                    <div class="product-name">Apple Watch Series 4 GPS</div>
+                                    <div class="product-description">đẳng cấp từ tên gọi đến từng chi tiết...</div>
+                                    <div class="product_info">
+                                        By <a class="product-by" href="">Apple</a>
+                                        <div class="product-stock">
+                                            In stock
+                                        </div>
+                                        <div class="product-quantity">
+                                            Quantity
+                                        </div>
+                                        <div class="product-quantity-id">
+                                            <div class="product-quantity-decrease">-</div>
+                                            <div class="product-quantity-number">8</div>
+                                            <div class="product-quantity-increase">+</div>
+                                        </div>
+                                        <div class="product-date">
+                                            Delivery by, Sat Mar 23
+                                        </div>
+                                        <div class="product-discount">
+                                            17% Off 4 Offers Available
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content__product-action">
+                                    <div class="content__product-action-list">
+                                        <div class="content__product-amount">
+                                            <div class="product-amount">
+                                                <div class="product-amount-start-l">
+                                                </div>
+                                                <div class="product-amount-start">
+                                                    34 <i class="far fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-price">
+                                                $399
+                                            </div>
+                                        </div>
+                                        <div class="product-free">
+                                            <i class="fas fa-shopping-cart"></i> Free Shipping
+                                        </div>
+                                        <div class="product-remove">
+                                            <i class="fas fa-times"></i> REMOVE
+                                        </div>
+                                        <div class="product_action">
+                                            <div class="product-wishlist">
+                                                <i class="far fa-star"></i> MOVE TO WISHLIST
+                                            </div>
+                                            <div class="product-wishlist-head">
+                                                <i class="fas fa-heart"></i> WISHLIST
+                                            </div>
+                                            <div class="product-add-cart">
+                                                <i class="fas fa-archive"></i> ADD TO CART
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content__product-detail">
+                                <div class="content__product-image">
+                                    <img class="product-image" src="./image/iphone-12-1_j388-44_769m-ed.png" alt="">
+                                </div>
+                                <div class="content__product-description">
+                                    <div class="product-name">Apple Watch Series 4 GPS</div>
+                                    <div class="product-description">đẳng cấp từ tên gọi đến từng chi tiết...</div>
+                                    <div class="product_info">
+                                        By <a class="product-by" href="">Apple</a>
+                                        <div class="product-stock">
+                                            In stock
+                                        </div>
+                                        <div class="product-quantity">
+                                            Quantity
+                                        </div>
+                                        <div class="product-quantity-id">
+                                            <div class="product-quantity-decrease">-</div>
+                                            <div class="product-quantity-number">8</div>
+                                            <div class="product-quantity-increase">+</div>
+                                        </div>
+                                        <div class="product-date">
+                                            Delivery by, Sat Mar 23
+                                        </div>
+                                        <div class="product-discount">
+                                            17% Off 4 Offers Available
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content__product-action">
+                                    <div class="content__product-action-list">
+                                        <div class="content__product-amount">
+                                            <div class="product-amount">
+                                                <div class="product-amount-start-l">
+                                                </div>
+                                                <div class="product-amount-start">
+                                                    34 <i class="far fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-price">
+                                                $399
+                                            </div>
+                                        </div>
+                                        <div class="product-free">
+                                            <i class="fas fa-shopping-cart"></i> Free Shipping
+                                        </div>
+                                        <div class="product-remove">
+                                            <i class="fas fa-times"></i> REMOVE
+                                        </div>
+                                        <div class="product_action">
+                                            <div class="product-wishlist">
+                                                <i class="far fa-star"></i> MOVE TO WISHLIST
+                                            </div>
+                                            <div class="product-wishlist-head">
+                                                <i class="fas fa-heart"></i> WISHLIST
+                                            </div>
+                                            <div class="product-add-cart">
+                                                <i class="fas fa-archive"></i> ADD TO CART
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__cart">
+                            <div class="content__cart-list">
+                                <div class="content__cart-option">
+                                    Options
+                                    <div class="content__cart-options">
+                                        <div class="content__cart-coupon">
+                                            Coupons
+                                        </div>
+                                        <a class="content__cart-apply" href="">Apply</a>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="content__cart-price-detail">
+                                    Price Details
+                                    <div class="content__cart-price-details">
+                                        <div class="content__cart-total">
+                                            Total MRP
+                                        </div>
+                                        <div class="content__cart-total-mrp">
+                                            $598
+                                        </div>
+                                    </div>
+                                    <div class="content__cart-price-details">
+                                        <div class="content__cart-total">
+                                            Bag Discount
+                                        </div>
+                                        <div class="content__cart-total-bag">
+                                            -$25
+                                        </div>
+                                    </div>
+                                    <div class="content__cart-price-details">
+                                        <div class="content__cart-total">
+                                            Estimated Tax
+                                        </div>
+                                        <div class="content__cart-total-estimated">
+                                            $1.3
+                                        </div>
+                                    </div>
+                                    <div class="content__cart-price-details">
+                                        <div class="content__cart-total">
+                                            EMI Eligibility
+                                        </div>
+                                        <a href="" class="content__cart-total-emi">Details </a>
+                                    </div>
+                                    <div class="content__cart-price-details">
+                                        <div class="content__cart-total">
+                                            Delivery Charges
+                                        </div>
+                                        <div class="content__cart-total-delivery">
+                                            Free
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="content__cart-price-details">
+                                        <div class="content__cart-totals">
+                                            Totle
+                                        </div>
+                                        <div class="content__cart-total-totals">
+                                            $574.3
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content__cart-order">
+                                    PLEASE ORDER
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

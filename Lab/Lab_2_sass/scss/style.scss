@@ -1,0 +1,21 @@
+// main
+.main {
+  height: 1000px;
+
+  // row
+  .row {
+    display: flex;
+    > input {
+      display: none;
+    }
+
+    // sidebar
+    .sidebar {
+      width: 286px;
+      background-color: white;
+    }
+    // kết thúc của sidebar
+  }
+  // Kết thúc row
+}
+// Kết thúc main

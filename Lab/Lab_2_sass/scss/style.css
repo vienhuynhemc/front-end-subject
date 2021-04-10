@@ -1,0 +1,17 @@
+.main {
+  height: 1000px;
+}
+
+.main .row {
+  display: flex;
+}
+
+.main .row > input {
+  display: none;
+}
+
+.main .row .sidebar {
+  width: 286px;
+  background-color: white;
+}
+/*# sourceMappingURL=style.css.map */
