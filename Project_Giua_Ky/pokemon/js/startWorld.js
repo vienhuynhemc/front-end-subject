@@ -1,6 +1,7 @@
 // Import ----------------
 import * as configuration from "./configuration.js";
 import * as musicManager from "./music_manager.js"
+import * as gameWorld from "./gameWorld.js"
 //------------------------
 
 // Các thuộc tính ----------
@@ -41,10 +42,34 @@ function init() {
     lottie_2_name.onclick = function () { startGame() };
     let lottie_2 = document.getElementById("lottie_2");
     lottie_2.onclick = function () { startGame() };
+    // Gán action cho hướng dẫn
+    let lottie_huong_dan = document.getElementById("lottie_huong_dan");
+    let huong_dan = document.getElementById("huong_dan");
+    lottie_huong_dan.onclick = function () { huongDan() };
+    huong_dan.onclick = function () { huongDan() };
+    document.getElementById("divHuongDanButton").onclick = function () {
+        if (configuration.isPlayMusic) {
+            musicManager.cursor.play();
+        }
+        document.getElementById("divHuongDanVideo").src = "";
+        document.getElementById("divHuongDanVideo").loop = false;
+        document.getElementById("divHuongDan").style.display = "none";
+    }
+}
+
+function huongDan() {
+    if (configuration.isPlayMusic) {
+        musicManager.cursor.play();
+    }
+    document.getElementById("divHuongDanVideo").src = "./img/intro.mp4";
+    document.getElementById("divHuongDanVideo").play();
+    document.getElementById("divHuongDanVideo").loop = true;
+    document.getElementById("divHuongDan").style.display = "flex";
 }
 
 // Phương thức bậc tắt nhạc
 export function openCloseMusic() {
+    musicManager.cursor.play();
     if (configuration.isPlayMusic) {
         configuration.stopMusic();
         lottie_4.playSegments([40, 100], true);
@@ -96,5 +121,7 @@ export function startGame() {
     setTimeout(function () {
         waitScreen_white.style.animationName = "";
     }, 6000);
+    // Chạy game world 
+    gameWorld.run();
 }
 //---------------------------------------
